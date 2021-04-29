@@ -206,7 +206,8 @@ export const InputText = styled.input`
   font-size: ${(props) => props.theme.bodyFontProps.light.fontSize};
   font-family: ${(props) => props.theme.font};
 
-  color: ${(props) => props.theme.secondaryColors.Severus} ${querys.desktopMQ} {
+  color: ${(props) => props.theme.secondaryColors.Severus};
+  ${querys.desktopMQ} {
     width: 374px;
   }
 `;

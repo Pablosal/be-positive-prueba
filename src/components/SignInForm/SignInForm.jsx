@@ -33,7 +33,8 @@ const SignInForm = () => {
       {openCongrats && (
         <AlertContainer>
           <SLightH3 center color={theme.secondaryColors.Dobby}>
-            Felicidades te haz registrado <br className="disappear"/> exitosamente.
+            Felicidades te haz registrado <br className="disappear" />{" "}
+            exitosamente.
           </SLightH3>
         </AlertContainer>
       )}
@@ -142,10 +143,12 @@ const SignInForm = () => {
               </BorderButton>
             </OnlyMobileDiv>
             <OnlyDesktopDiv>
-              <BodyHeavySpan align="center">
-                O inicia sesión con otra cuenta
-              </BodyHeavySpan>
-              <Proovedores />
+              <div style={{ display: "flex", flexDirection: "column" }}>
+                <BodyHeavySpan align="center">
+                  O inicia sesión con otra cuenta
+                </BodyHeavySpan>
+                <Proovedores />
+              </div>
             </OnlyDesktopDiv>
           </form>
         </div>
