@@ -40,6 +40,7 @@ const SignUpForm = () => {
           alignItems: "center",
           flexDirection: "column",
           position: "relative",
+          height:"100vh"
         }}
       >
         <OnlyMobileDiv>
@@ -132,7 +133,7 @@ const SignUpForm = () => {
                 marginBottom: "25px",
               }}
             >
-              <InputCheckbox />
+              <InputCheckbox type="checkbox" />
               <BodyHeavylabel color={theme.primaryColors.Hermione}>
                 Aceptar tèrminos y condiciones
               </BodyHeavylabel>
@@ -150,10 +151,13 @@ const SignUpForm = () => {
               </BorderButton>
             </OnlyMobileDiv>
             <OnlyDesktopDiv>
+              <div style={{display:"flex",flexDirection:"column"}}>
               <BodyHeavySpan align="center">
                 O inicia sesión con otra cuenta
               </BodyHeavySpan>
               <Proovedores registroExitoso={() => setOpenModal(!openModal)} />
+
+              </div>
             </OnlyDesktopDiv>
           </form>
         </div>
